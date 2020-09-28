@@ -12,7 +12,7 @@ const forecast = (latitude, longitude, callback) => {
         
         // console.log("forecast:   --->" + " It is currently " + response.body.current + " degrees in " + response.body.location)
         
-        var predictedForecast = response.body.current.weather_descriptions.toString()
+        var predictedForecast = "The predicted forecast is: " + response.body.current.weather_descriptions.toString()
         var onjectsInResponse = Object.keys(response.body.forecast).length
         //console.log(response.body.current.weather_descriptions.toString())
         if (error) {
